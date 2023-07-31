@@ -1,0 +1,139 @@
+@font-face {
+    font-family: norse-font;
+    src: url("norse-bold-font.otf");
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+}
+
+img{
+    object-fit: none;
+    height:800px;
+}
+
+.background-image{
+    height:100vh;
+}
+
+.logo{
+    font-family: norse-font, Arial, Helvetica, sans-serif;
+    font-size: min(3rem, 9vh);
+    color:white;
+    opacity:0.6;
+    position:relative;
+    text-align: center;
+    bottom:70%;
+    background-color: black;
+    padding:1.5rem;
+}
+
+.credit{
+    position:relative;
+    bottom:20%;
+    color:whitesmoke;
+    text-align: center;
+    opacity:0.4;
+    font-size:min(1rem, 3vh);
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    height:800px;
+    flex-basis:content;
+    flex-grow:1;
+}
+
+.questions span{
+    font:italic;
+}
+
+.heading-row, .submit-row{
+    flex:8;
+    background-color: whitesmoke;
+}
+
+.heading-row{
+    font-weight:bold;
+    font-size:18px;
+    padding-top:4rem;
+    padding-left:2rem;
+    padding-bottom:2rem;
+    padding-right:4rem;
+}
+
+form{
+    flex:7;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.statement{
+    font-weight: bold;
+    font-size:20px;
+}
+
+.columns{
+    display:flex;
+    gap:4rem;
+}
+
+.left-column, .right-column{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.input-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+.input-wrapper label{
+    font-size:.6rem;
+    color:grey;
+    font-weight: bold;
+}
+
+input{
+    width: 12rem;
+    border: 1px solid #E5E7EB;
+    background-color: "#F8F8F8";
+    height:1.5rem;
+    border-radius: 5px;
+}
+
+input:focus{
+    box-shadow: 3px 3px 3px gray;
+}
+
+.submit-row{
+    box-shadow: inset 0px 4px 8px lightgrey;
+    display:flex;
+    flex-direction: column;
+    padding-left:2rem;
+    gap:1.5rem;
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+button[type = "button"]{
+    background-color: #ad9fba;
+    color:whitesmoke;
+    padding:.5rem 2rem;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width:fit-content;
+    z-index: 10;
+}
+
+.previous-user a{
+    color: #ad9fba;
+
+}

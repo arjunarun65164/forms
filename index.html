@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Odin Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class='background-image'>
+        <img src="background-image.jpeg" alt="background image">
+        <div class="logo">ODIN FORM</div>
+        <div class="credit">Credit:Juniper Photon on Unsplash</div>
+    </div>
+
+    <div class='questions'>
+        <div class="heading-row">
+            <p>
+                This is not a real online service. You know you need something like this in your life
+                to help you realize your deepest dreams.
+            </p>
+            <p>Sign up <span>now</span> to get started.</p>
+
+            <p>You <span>know</span> you want to.</p>
+        </div>
+        <form action="" id = "myform" name = "myform">
+            <div class="statement">Let's do this!</div>
+            <div class='columns'>
+                <div class="left-column">
+                    <div class="input-wrapper">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name"  >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email"  >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password"  >
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="input-wrapper">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name"  >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="number" id="phone-number"  >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password"  >
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="submit-row">
+            <button type="button" form = 'myform' class = "submit">Create Account</button>
+            <div class='previous-user'>
+                Already have an account? <a href="">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
